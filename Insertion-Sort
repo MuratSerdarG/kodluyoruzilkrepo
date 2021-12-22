@@ -1,53 +1,42 @@
-
-# Proje Sahibi: Patika.Dev 
-# Proje Konusu: Veri Yapıları ve Algoritmalar
-## Konu 1: Insertion Sort
----
-**[22,27,16,2,18,6] -> Insertion Sort**
-- Yukarıda verilen dizinin sort türüne göre aşamalarını yazınız.
-- Big-O gösterimini yazınız.
-- Time Complexity: Average case: Aradığımız sayının ortada olması, Worst case: Aradığımız sayının sonda olması, Best case: Aradığımız sayının dizinin en başında olması.
-- Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
-- [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
----
-
-#### 1-) Yukarıda verilen dizinin sort türüne göre aşamalarını yazınız.
-```sh
-[22,27,16,2,18,6] > n
-[2,27,16,22,18,6] > n-1
-[2,6,16,22,18,27] > n-2
-[2,6,16,22,18,27] > n-3
-[2,6,16,18,22,27] > 1
-```
-#### 2-) Big-O gösterimini yazınız.
-
-O(n^2)
-
-#### 3-) Time Complexity: 
-
-Dizi Sıralanmadan Önce;
-```sh
-Avarage case: 16 , 2
-Worst case: 6
-Best case: 22
-```
-
-Dizi Sıralandıktan Sonra;
-
-```sh
-Avarage case: 16 , 18
-Worst case: 27
-Best case: 2
-```
-
-#### 4-) Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
-```
-Yukarıdaki listeye baktığımızda dizinin sıralanmış hali “[2,6,16,18,22,27]” şeklindedir. Şekilde görüleceği gibi “18” sayısı tam ortada bulunmaktadır. Bu da bize dizinin son halinde 18 sayısının “Average case” olduğunu gösteriyor.
-```
-#### 5-) [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
-```sh
-1-) [7,3,5,8,2,9,4,15,6] > 1. Aşama tüm sayılar taranır ve en küçük sayı bulunur.
-2-) [2,3,5,8,7,9,4,15,6] > 2. Aşama en küçük sayı başa yazılır ve liste yeniden taranır. En küçük sayı bulunur.
-3-) [2,3,5,8,7,9,4,15,6] >3. Aşama en küçük sayı 2. Sıraya yazılır, eğer en küçük sayı 2. Sıradaki sayı ise herhangi bir işlem yapılmaz. Sonrasında liste yeniden taranır en küçük sayı bulunur.
-4-) [2,3,4,8,7,9,5,15,6] >4. Aşama en küçük sayı 3. Sıraya yazılır, eğer en küçük sayı 3. Sıradaki sayı ise herhangi bir işlem yapılmaz. 
-```
+<h1 class="code-line" data-line-start=1 data-line-end=2 ><a id="Proje_Sahibi_PatikaDev_1"></a>Proje Sahibi: Patika.Dev</h1>
+<h1 class="code-line" data-line-start=2 data-line-end=3 ><a id="Proje_Konusu_Veri_Yaplar_ve_Algoritmalar_2"></a>Proje Konusu: Veri Yapıları ve Algoritmalar</h1>
+<h2 class="code-line" data-line-start=3 data-line-end=4 ><a id="Konu_1_Insertion_Sort_3"></a>Konu 1: Insertion Sort</h2>
+<hr>
+<p class="has-line-data" data-line-start="5" data-line-end="6"><strong>[22,27,16,2,18,6] -&gt; Insertion Sort</strong></p>
+<ul>
+<li class="has-line-data" data-line-start="6" data-line-end="7">Yukarıda verilen dizinin sort türüne göre aşamalarını yazınız.</li>
+<li class="has-line-data" data-line-start="7" data-line-end="8">Big-O gösterimini yazınız.</li>
+<li class="has-line-data" data-line-start="8" data-line-end="9">Time Complexity: Average case: Aradığımız sayının ortada olması, Worst case: Aradığımız sayının sonda olması, Best case: Aradığımız sayının dizinin en başında olması.</li>
+<li class="has-line-data" data-line-start="9" data-line-end="10">Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.</li>
+<li class="has-line-data" data-line-start="10" data-line-end="11">[7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort’a göre ilk 4 adımını yazınız.</li>
+</ul>
+<hr>
+<h4 class="code-line" data-line-start=13 data-line-end=14 ><a id="1_Yukarda_verilen_dizinin_sort_trne_gre_aamalarn_yaznz_13"></a>1-) Yukarıda verilen dizinin sort türüne göre aşamalarını yazınız.</h4>
+<pre><code class="has-line-data" data-line-start="15" data-line-end="21" class="language-sh">[<span class="hljs-number">22</span>,<span class="hljs-number">27</span>,<span class="hljs-number">16</span>,<span class="hljs-number">2</span>,<span class="hljs-number">18</span>,<span class="hljs-number">6</span>] &gt; n
+[<span class="hljs-number">2</span>,<span class="hljs-number">27</span>,<span class="hljs-number">16</span>,<span class="hljs-number">22</span>,<span class="hljs-number">18</span>,<span class="hljs-number">6</span>] &gt; n-<span class="hljs-number">1</span>
+[<span class="hljs-number">2</span>,<span class="hljs-number">6</span>,<span class="hljs-number">16</span>,<span class="hljs-number">22</span>,<span class="hljs-number">18</span>,<span class="hljs-number">27</span>] &gt; n-<span class="hljs-number">2</span>
+[<span class="hljs-number">2</span>,<span class="hljs-number">6</span>,<span class="hljs-number">16</span>,<span class="hljs-number">22</span>,<span class="hljs-number">18</span>,<span class="hljs-number">27</span>] &gt; n-<span class="hljs-number">3</span>
+[<span class="hljs-number">2</span>,<span class="hljs-number">6</span>,<span class="hljs-number">16</span>,<span class="hljs-number">18</span>,<span class="hljs-number">22</span>,<span class="hljs-number">27</span>] &gt; <span class="hljs-number">1</span>
+</code></pre>
+<h4 class="code-line" data-line-start=21 data-line-end=22 ><a id="2_BigO_gsterimini_yaznz_21"></a>2-) Big-O gösterimini yazınız.</h4>
+<p class="has-line-data" data-line-start="23" data-line-end="24">O(n^2)</p>
+<h4 class="code-line" data-line-start=25 data-line-end=26 ><a id="3_Time_Complexity_25"></a>3-) Time Complexity:</h4>
+<p class="has-line-data" data-line-start="27" data-line-end="28">Dizi Sıralanmadan Önce;</p>
+<pre><code class="has-line-data" data-line-start="29" data-line-end="33" class="language-sh">Avarage <span class="hljs-keyword">case</span>: <span class="hljs-number">16</span> , <span class="hljs-number">2</span>
+Worst <span class="hljs-keyword">case</span>: <span class="hljs-number">6</span>
+Best <span class="hljs-keyword">case</span>: <span class="hljs-number">22</span>
+</code></pre>
+<p class="has-line-data" data-line-start="34" data-line-end="35">Dizi Sıralandıktan Sonra;</p>
+<pre><code class="has-line-data" data-line-start="37" data-line-end="41" class="language-sh">Avarage <span class="hljs-keyword">case</span>: <span class="hljs-number">16</span> , <span class="hljs-number">18</span>
+Worst <span class="hljs-keyword">case</span>: <span class="hljs-number">27</span>
+Best <span class="hljs-keyword">case</span>: <span class="hljs-number">2</span>
+</code></pre>
+<h4 class="code-line" data-line-start=42 data-line-end=43 ><a id="4_Dizi_sralandktan_sonra_18_says_hangi_case_kapsamna_girer_Yaznz_42"></a>4-) Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.</h4>
+<pre><code class="has-line-data" data-line-start="44" data-line-end="46">Yukarıdaki listeye baktığımızda dizinin sıralanmış hali “[2,6,16,18,22,27]” şeklindedir. Şekilde görüleceği gibi “18” sayısı tam ortada bulunmaktadır. Bu da bize dizinin son halinde 18 sayısının “Average case” olduğunu gösteriyor.
+</code></pre>
+<h4 class="code-line" data-line-start=46 data-line-end=47 ><a id="5_7358294156_dizisinin_Insertion_Sorta_gre_ilk_4_admn_yaznz_46"></a>5-) [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort’a göre ilk 4 adımını yazınız.</h4>
+<pre><code class="has-line-data" data-line-start="48" data-line-end="53" class="language-sh"><span class="hljs-number">1</span>-) [<span class="hljs-number">7</span>,<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">8</span>,<span class="hljs-number">2</span>,<span class="hljs-number">9</span>,<span class="hljs-number">4</span>,<span class="hljs-number">15</span>,<span class="hljs-number">6</span>] &gt; <span class="hljs-number">1</span>. Aşama tüm sayılar taranır ve en küçük sayı bulunur.
+<span class="hljs-number">2</span>-) [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">8</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>,<span class="hljs-number">4</span>,<span class="hljs-number">15</span>,<span class="hljs-number">6</span>] &gt; <span class="hljs-number">2</span>. Aşama en küçük sayı başa yazılır ve liste yeniden taranır. En küçük sayı bulunur.
+<span class="hljs-number">3</span>-) [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">8</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>,<span class="hljs-number">4</span>,<span class="hljs-number">15</span>,<span class="hljs-number">6</span>] &gt;<span class="hljs-number">3</span>. Aşama en küçük sayı <span class="hljs-number">2</span>. Sıraya yazılır, eğer en küçük sayı <span class="hljs-number">2</span>. Sıradaki sayı ise herhangi bir işlem yapılmaz. Sonrasında liste yeniden taranır en küçük sayı bulunur.
+<span class="hljs-number">4</span>-) [<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">8</span>,<span class="hljs-number">7</span>,<span class="hljs-number">9</span>,<span class="hljs-number">5</span>,<span class="hljs-number">15</span>,<span class="hljs-number">6</span>] &gt;<span class="hljs-number">4</span>. Aşama en küçük sayı <span class="hljs-number">3</span>. Sıraya yazılır, eğer en küçük sayı <span class="hljs-number">3</span>. Sıradaki sayı ise herhangi bir işlem yapılmaz. 
+</code></pre>
