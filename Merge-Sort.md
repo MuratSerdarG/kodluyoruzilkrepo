@@ -1,6 +1,6 @@
 # Proje Sahibi: Patika.Dev 
 # Proje Konusu: Veri Yapıları ve Algoritmalar
-## Konu 1: Insertion Sort
+## Konu 1: Merge Sort
 ---
 **[16,21,11,8,12,22] -> Merge Sort**
 - Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
