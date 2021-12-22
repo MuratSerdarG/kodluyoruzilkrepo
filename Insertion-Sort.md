@@ -41,12 +41,14 @@ Best case: 2
 
 #### 4-) Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
 ```
-Yukarıdaki listeye baktığımızda dizinin sıralanmış hali “[2,6,16,18,22,27]” şeklindedir. Şekilde görüleceği gibi “18” sayısı tam ortada bulunmaktadır. Bu da bize dizinin son halinde 18 sayısının “Average case” olduğunu gösteriyor.
+Yukarıdaki listeye baktığımızda dizinin sıralanmış hali “[2,6,16,18,22,27]” şeklindedir. Şekilde görüleceği gibi “18” sayısı tam ortada bulunmaktadır.
+Bu da bize dizinin son halinde 18 sayısının “Average case” olduğunu gösteriyor.
 ```
 #### 5-) [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
 ```sh
 1-) [7,3,5,8,2,9,4,15,6] > 1. Aşama tüm sayılar taranır ve en küçük sayı bulunur.
 2-) [2,3,5,8,7,9,4,15,6] > 2. Aşama en küçük sayı başa yazılır ve liste yeniden taranır. En küçük sayı bulunur.
-3-) [2,3,5,8,7,9,4,15,6] >3. Aşama en küçük sayı 2. Sıraya yazılır, eğer en küçük sayı 2. Sıradaki sayı ise herhangi bir işlem yapılmaz. Sonrasında liste yeniden taranır en küçük sayı bulunur.
+3-) [2,3,5,8,7,9,4,15,6] >3. Aşama en küçük sayı 2. Sıraya yazılır, eğer en küçük sayı 2. Sıradaki sayı ise herhangi bir işlem yapılmaz.
+Sonrasında liste yeniden taranır en küçük sayı bulunur.
 4-) [2,3,4,8,7,9,5,15,6] >4. Aşama en küçük sayı 3. Sıraya yazılır, eğer en küçük sayı 3. Sıradaki sayı ise herhangi bir işlem yapılmaz. 
 ```
